@@ -16,42 +16,12 @@
   <body class="background-radial-gradient">
     <style>
       .background-radial-gradient {
-        background-color: hsl(219, 43%, 17%);
-        background-image: radial-gradient(
-            650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%
-          ),
-          radial-gradient(
-            1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
-            transparent 100%
-          );
-      }
-
-      #radius-shape-1 {
-        height: 220px;
-        width: 220px;
-        top: 110px;
-        left: 130px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
-      }
-
-      #radius-shape-2 {
-        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: 30px;
-        right: 180px;
-        width: 200px;
-        height: 300px;
-        background: radial-gradient(#44006b, #ad1fff);
-        overflow: hidden;
+        background-color: #19263e;
+        background-image: url("./background.svg");
+        background-attachment: fixed ;
+        background-size: cover;
+        background-repeat: no-repeat:
+        background-position: center center;
       }
 
       #card {
@@ -62,24 +32,19 @@
         margin: 100px auto;
         text-align: center;
         position: absolute;
-        background: hsl(0, 0%, 100%);
+        background: #8fbff2b0;
         backdrop-filter: blur(30px);
       }
       .form-outline > input{
-        background-color: #ececec77;
+        background-color: #ffffff22;
+        border: solid 2px #ffffffaa;
       }
     </style>
 
     <section class="text-center">
-      <div
-        id="radius-shape-1"
-        class="position-absolute rounded-circle shadow-5-strong"
-      ></div>
-      <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
       <div class="card mx-9 lg-12 mx-md-5 shadow-5-strong" id="card">
         <div class="card-body px-md-5 align-left">
           <h2 class="fw-bold mb-5">Registration Form</h2>
-
 
           
           <form method="post" action="/sign_up" style="text-align: left">
